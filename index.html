@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joko Pitoyo — Profesional IT & Portofolio</title>
+    <!-- Tailwind CSS Play CDN untuk desain Cyber / Tech Minimalist yang super modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#131c2e',
+                        accentGreen: '#10b981',
+                        accentCyan: '#06b6d4',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: rgba(19, 28, 46, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-100 min-h-screen selection:bg-emerald-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#beranda" class="text-2xl font-black tracking-wider flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-mono text-sm">JP</span>
+                <span class="bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">Joko Pitoyo</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#tentang" class="hover:text-emerald-400 transition">Tentang</a>
+                <a href="#keahlian" class="hover:text-emerald-400 transition">Keahlian</a>
+                <a href="#pengalaman" class="hover:text-emerald-400 transition">Pengalaman</a>
+                <a href="#penghargaan" class="hover:text-emerald-400 transition">Penghargaan</a>
+            </nav>
+            <a href="https://wa.me/6287833072945" target="_blank" class="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-4 py-2 rounded-xl text-sm font-semibold hover:bg-emerald-500 hover:text-white transition shadow-lg shadow-emerald-500/5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Hubungi Saya
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="pt-32 pb-20 md:pt-44 md:pb-32 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-xs font-mono text-emerald-400">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    IT PROFESSIONAL &bull; 10 TAHUN PENGALAMAN
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                    Teknologi yang bekerja <span class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">untuk manusia.</span>
+                </h1>
+                <p class="text-slate-400 text-base md:text-lg max-w-xl leading-relaxed">
+                    Saya Joko Pitoyo, profesional IT dengan pengalaman mendalam membangun, merawat, dan mendukung kehandalan sistem operasional di lingkungan ritel.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="https://wa.me/6287833072945" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-6 py-3.5 rounded-xl transition flex items-center gap-3 shadow-lg shadow-emerald-500/20">
+                        Mari Terhubung
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    <a href="#tentang" class="text-slate-300 hover:text-white px-6 py-3.5 rounded-xl border border-slate-700/80 hover:border-slate-600 transition text-sm font-semibold">
+                        Kenali Perjalanan ↓
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Visual / Profile Card -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-sm">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-3xl blur opacity-30"></div>
+                    <div class="relative glass-card p-6 rounded-3xl text-center space-y-4">
+                        <div class="w-48 h-56 mx-auto rounded-2xl overflow-hidden border-2 border-emerald-500/30 bg-slate-800 relative">
+                            <img src="https://drive.google.com/thumbnail?id=0BzlEVluC5hvgYjQzV3dKakQybG8&sz=w1000&resourcekey=0-xEtmaEMBQpOv-JI3qTW0rA" alt="Joko Pitoyo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="w-full h-full hidden items-center justify-center bg-gradient-to-br from-emerald-900 to-slate-900 text-emerald-400 font-bold text-3xl">JP</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Joko Pitoyo</h3>
+                            <p class="text-xs font-mono text-emerald-400 mt-1">PROFESIONAL IT &bull; INDOMARET</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2 border-t border-slate-800">
+                            <div class="bg-slate-900/50 p-3 rounded-xl border border-slate-800">
+                                <span class="block text-2xl font-black text-emerald-400">10+</span>
+                                <span class="text-[10px] text-slate-400 uppercase tracking-wider font-mono">Tahun Pengalaman</span>
+                            </div>
+                            <div class="bg-slate-900/50 p-3 rounded-xl border border-slate-800">
+                                <span class="block text-2xl font-black text-cyan-400">S1</span>
+                                <span class="text-[10px] text-slate-400 uppercase tracking-wider font-mono">Sistem Informasi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="tentang" class="py-20 border-t border-slate-800/80 bg-slate-950/40">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-4">
+                <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest">01 — Profil</span>
+                <h2 class="text-3xl font-bold mt-2">Teliti & Tangguh</h2>
+            </div>
+            <div class="md:col-span-8 glass-card p-8 rounded-3xl space-y-4">
+                <p class="text-slate-300 leading-relaxed">
+                    Lulusan Sistem Informasi Universitas Terbuka dengan pengalaman 10 tahun sebagai staf IT office di lingkungan ritel. Terbiasa bekerja teliti, menjaga koordinasi, serta tetap fokus dan adaptif saat menghadapi tekanan maupun perubahan prioritas.
+                </p>
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-800 text-sm text-slate-400">
+                    <span class="text-emerald-400 font-mono font-semibold">Pendidikan:</span>
+                    <span>Sistem Informasi Universitas Terbuka (2027)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian Section -->
+    <section id="keahlian" class="py-20 border-t border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-12">
+                <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest">02 — Kompetensi</span>
+                <h2 class="text-3xl font-bold mt-2">Keahlian & Teknologi</h2>
+            </div>
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glass-card p-6 rounded-2xl glow-effect transition border border-slate-800">
+                    <span class="text-xs font-mono text-slate-500">01</span>
+                    <h3 class="text-lg font-bold mt-3 text-white">Node.js</h3>
+                    <p class="text-xs text-slate-400 mt-1">Backend & Server Operations</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl glow-effect transition border border-slate-800">
+                    <span class="text-xs font-mono text-slate-500">02</span>
+                    <h3 class="text-lg font-bold mt-3 text-white">VB.NET</h3>
+                    <p class="text-xs text-slate-400 mt-1">Desktop App & Automation</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl glow-effect transition border border-slate-800">
+                    <span class="text-xs font-mono text-slate-500">03</span>
+                    <h3 class="text-lg font-bold mt-3 text-white">MySQL</h3>
+                    <p class="text-xs text-slate-400 mt-1">Database Management</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl glow-effect transition border border-slate-800">
+                    <span class="text-xs font-mono text-slate-500">04</span>
+                    <h3 class="text-lg font-bold mt-3 text-white">Microsoft Office</h3>
+                    <p class="text-xs text-slate-400 mt-1">Advanced Productivity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman Section -->
+    <section id="pengalaman" class="py-20 border-t border-slate-800/80 bg-slate-950/40">
+        <div class="max-w-6xl mx-auto px-6">
+            <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest">03 — Pengalaman Kerja</span>
+            <div class="glass-card p-8 md:p-10 rounded-3xl mt-6 grid md:grid-cols-12 gap-8 items-center border border-emerald-500/20">
+                <div class="md:col-span-3 text-center md:text-left">
+                    <span class="text-5xl font-extrabold text-emerald-400 font-mono">10</span>
+                    <span class="block text-xs font-mono text-slate-400 mt-1 uppercase tracking-wider">Tahun Pengalaman</span>
+                </div>
+                <div class="md:col-span-9 space-y-2 border-t md:border-t-0 md:border-l border-slate-800 pt-6 md:pt-0 md:pl-8">
+                    <span class="text-xs font-mono text-emerald-400 uppercase">Indomaret</span>
+                    <h3 class="text-2xl font-bold">Staf IT Office</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Mendukung kebutuhan IT dari lingkungan kerja office, membantu tim menangani kendala operasional, menjaga koordinasi, dan memastikan seluruh sistem berjalan lancar di bawah tekanan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Penghargaan Section -->
+    <section id="penghargaan" class="py-20 border-t border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div>
+                    <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest">04 — Apresiasi</span>
+                    <h2 class="text-3xl font-bold mt-2">Sertifikat & Penghargaan</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-sm">Penghargaan Best Officer sebagai bukti dedikasi tinggi dalam bekerja.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Sertifikat 1 -->
+                <a href="https://drive.google.com/file/d/1iy57qluWRUY1h5yG3bwyzR9qS3pzu_5M/view?usp=drive_link" target="_blank" class="glass-card p-5 rounded-2xl group hover:border-emerald-500/50 transition block">
+                    <div class="aspect-video bg-slate-900 rounded-xl overflow-hidden border border-slate-800 relative mb-4">
+                        <img src="https://lh3.googleusercontent.com/d/1iy57qluWRUY1h5yG3bwyzR9qS3pzu_5M=w1200" alt="Best Officer 01" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs font-semibold text-emerald-400 gap-2">
+                            Buka Sertifikat ↗
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg group-hover:text-emerald-400 transition">Best Officer 01</h3>
+                    <p class="text-xs text-slate-400 mt-1">Indomaret &bull; Penghargaan Terbaik</p>
+                </a>
+
+                <!-- Sertifikat 2 -->
+                <a href="https://drive.google.com/file/d/1LYk6KOYqPSiEn2mDZHFAMR9WhTuhXgmu/view?usp=drive_link" target="_blank" class="glass-card p-5 rounded-2xl group hover:border-emerald-500/50 transition block">
+                    <div class="aspect-video bg-slate-900 rounded-xl overflow-hidden border border-slate-800 relative mb-4">
+                        <img src="https://lh3.googleusercontent.com/d/1LYk6KOYqPSiEn2mDZHFAMR9WhTuhXgmu=w1200" alt="Best Officer 02" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs font-semibold text-emerald-400 gap-2">
+                            Buka Sertifikat ↗
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg group-hover:text-emerald-400 transition">Best Officer 02</h3>
+                    <p class="text-xs text-slate-400 mt-1">Indomaret &bull; Penghargaan Terbaik</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-12">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <p class="text-xs font-mono text-slate-500 uppercase">Ada yang bisa dibantu?</p>
+                <h3 class="text-2xl font-bold mt-1">Mari Mulai Percakapan</h3>
+            </div>
+            <a href="https://wa.me/6287833072945" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-6 py-3 rounded-xl transition flex items-center gap-3">
+                WhatsApp: 0878 3307 2945
+            </a>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-8 pt-6 border-t border-slate-900 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+            <p>&copy; 2027 Joko Pitoyo. All rights reserved.</p>
+            <a href="#beranda" class="hover:text-emerald-400 transition">Kembali ke Atas ↑</a>
+        </div>
+    </footer>
+
+</body>
+</html>
